@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="game">
+      <UniqueIdentifier>{a21bac04-87b8-4059-bbd9-d4b484b3429d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\device">
+      <UniqueIdentifier>{3c4745cd-2dbc-4ac7-9abd-eb7f385c4384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\utils">
+      <UniqueIdentifier>{d713352e-6fa6-4296-bcc6-f74f37294a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\scene">
+      <UniqueIdentifier>{b4271c10-73ba-4822-a5b3-602e915ac79b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\device\audio">
+      <UniqueIdentifier>{07390935-e258-4142-9fa8-9e3f739ade9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\device\fps">
+      <UniqueIdentifier>{6ba0a68d-0e13-4646-bc0f-580356d2ebf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\device\graphic">
+      <UniqueIdentifier>{95f80095-004f-4694-bc30-e779893acf46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\device\input">
+      <UniqueIdentifier>{84b20153-4092-49ec-ad90-4380a995429c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\device\text">
+      <UniqueIdentifier>{17d43525-3ab3-4d83-8689-0fc384c27c43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\scene\title">
+      <UniqueIdentifier>{c5f255a7-393a-48c0-8f8b-733ecbbbca31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\scene\battle">
+      <UniqueIdentifier>{7a9566fb-53e1-44db-8005-2b043d1e900e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\scene\test">
+      <UniqueIdentifier>{0944f0db-c5af-421e-9b1f-6aa0c1a6280b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\game\game_core.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\game_manager.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\utils\string_util.cpp">
+      <Filter>game\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\scene\base_scene.cpp">
+      <Filter>game\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\scene\scene_factory.cpp">
+      <Filter>game\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\scene\scene_manager.cpp">
+      <Filter>game\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\device\text\font_manager.cpp">
+      <Filter>game\device\text</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\device\input\input_receiver.cpp">
+      <Filter>game\device\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\device\graphic\image_manager.cpp">
+      <Filter>game\device\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\device\fps\fps_controller.cpp">
+      <Filter>game\device\fps</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\device\audio\music_player.cpp">
+      <Filter>game\device\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\scene\test\test_scene.cpp">
+      <Filter>game\scene\test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\scene\battle\battle_scene.cpp">
+      <Filter>game\scene\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\scene\title\title_scene.cpp">
+      <Filter>game\scene\title</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\game\game_core.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\game_manager.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\utils\singleton.h">
+      <Filter>game\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\utils\string_util.h">
+      <Filter>game\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\scene\base_scene.h">
+      <Filter>game\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\scene\scene_factory.h">
+      <Filter>game\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\scene\scene_manager.h">
+      <Filter>game\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\device\text\font_manager.h">
+      <Filter>game\device\text</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\device\input\input_receiver.h">
+      <Filter>game\device\input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\device\graphic\image_manager.h">
+      <Filter>game\device\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\device\fps\fps_controller.h">
+      <Filter>game\device\fps</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\device\audio\music_player.h">
+      <Filter>game\device\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\scene\test\test_scene.h">
+      <Filter>game\scene\test</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\scene\battle\battle_scene.h">
+      <Filter>game\scene\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\scene\title\title_scene.h">
+      <Filter>game\scene\title</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
