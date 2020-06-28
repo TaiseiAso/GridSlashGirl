@@ -28,6 +28,7 @@
     <ClCompile Include="src\game\game_manager.cpp" />
     <ClCompile Include="src\game\scene\base_scene.cpp" />
     <ClCompile Include="src\game\scene\battle\battle_scene.cpp" />
+    <ClCompile Include="src\game\scene\how\how_scene.cpp" />
     <ClCompile Include="src\game\scene\scene_factory.cpp" />
     <ClCompile Include="src\game\scene\scene_manager.cpp" />
     <ClCompile Include="src\game\scene\test\test_scene.cpp" />
@@ -45,6 +46,7 @@
     <ClInclude Include="src\game\game_manager.h" />
     <ClInclude Include="src\game\scene\base_scene.h" />
     <ClInclude Include="src\game\scene\battle\battle_scene.h" />
+    <ClInclude Include="src\game\scene\how\how_scene.h" />
     <ClInclude Include="src\game\scene\scene_factory.h" />
     <ClInclude Include="src\game\scene\scene_manager.h" />
     <ClInclude Include="src\game\scene\test\test_scene.h" />

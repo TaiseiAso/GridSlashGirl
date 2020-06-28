@@ -23,10 +23,10 @@ namespace game
 		graphic::ImageManager::instance().loadGroupNameToFramesDatabase("resource/database/group_name_to_frames.csv");
 		
 		text::FontManager::instance().loadFontResourceNameToPathDatabase("resource/database/font_resource_name_to_path.csv");
-		//text::FontManager::instance().loadFontResourceFromNameWithDatabase("Voyager Grotesque Bold");
+		text::FontManager::instance().loadFontResourceFromNameWithDatabase("Voyager Grotesque Bold");
 
 		scene::SceneManager::create();
-		scene::SceneManager::instance().createFirstScene(scene::SCENE_ID::test);
+		scene::SceneManager::instance().createFirstScene(scene::SCENE_ID::title);
 
 		// テスト用
 		scene::SceneManager::instance().setMoveSceneFadeColor(GetColor(255, 255, 255));
@@ -47,13 +47,11 @@ namespace game
 
 	void GameCore::loop()
 	{
-		while (!ProcessMessage())
+		while (!ProcessMessage() && !ClearDrawScreen())
 		{
 			fpsController_->update();
 			input::InputReceiver::instance().update();
 			audio::MusicPlayer::instance().update();
-
-			ClearDrawScreen();
 			
 			if (!scene::SceneManager::instance().step()) break;
 			fpsController_->draw(); // テスト用

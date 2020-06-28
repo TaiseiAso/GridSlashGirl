@@ -1,28 +1,20 @@
-#ifndef title_scene_h
-#define title_scene_h
+#ifndef how_scene_h
+#define how_scene_h
 
 #include "DxLib.h"
 #include "scene/base_scene.h"
 #include "device/graphic/image_manager.h"
 
-namespace game::scene::title
+namespace game::scene::how
 {
-	class TitleScene : public BaseScene
+	class HowScene : public BaseScene
 	{
 	private:
-		enum class Mode
-		{
-			title, // タイトル画面
-			select // セレクト画面
-		};
-
 		const unsigned int whiteColor_ = GetColor(255, 255, 255); // 白色
 		const unsigned int blackColor_ = GetColor(0, 0, 0); // 黒色
-		const unsigned int redColor_ = GetColor(200, 60, 80);  // 赤色
-		
+
 		int elapsedFrame_; // 経過フレーム数
-		Mode mode_; // 現在の画面モード
-		int select_; // セレクト画面のカーソル位置
+		int page_; // 現在表示中の遊び方のページ
 
 		// シーンの初期化処理
 		void initialize() override;
@@ -38,10 +30,10 @@ namespace game::scene::title
 
 	public:
 		// コンストラクタ
-		TitleScene();
+		HowScene();
 		// デストラクタ
-		~TitleScene();
+		~HowScene();
 	};
 }
 
-#endif // !title_scene_h
+#endif // !how_scene_h

@@ -13,6 +13,9 @@ namespace game::scene
 		case SCENE_ID::title:
 			createdScene = std::make_unique<title::TitleScene>();
 			break;
+		case SCENE_ID::how:
+			createdScene = std::make_unique<how::HowScene>();
+			break;
 		case SCENE_ID::battle:
 			createdScene = std::make_unique<battle::BattleScene>();
 			break;

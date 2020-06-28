@@ -37,6 +37,9 @@
     <Filter Include="game\scene\test">
       <UniqueIdentifier>{0944f0db-c5af-421e-9b1f-6aa0c1a6280b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="game\scene\how">
+      <UniqueIdentifier>{cd14aae4-9735-466a-93bd-8cea35b3accc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
@@ -81,6 +84,9 @@
     </ClCompile>
     <ClCompile Include="src\game\scene\title\title_scene.cpp">
       <Filter>game\scene\title</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\scene\how\how_scene.cpp">
+      <Filter>game\scene\how</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +134,9 @@
     </ClInclude>
     <ClInclude Include="src\game\scene\title\title_scene.h">
       <Filter>game\scene\title</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\scene\how\how_scene.h">
+      <Filter>game\scene\how</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

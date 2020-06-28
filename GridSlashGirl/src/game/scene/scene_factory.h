@@ -4,12 +4,14 @@
 #include "test/test_scene.h"
 #include "battle/battle_scene.h"
 #include "title/title_scene.h"
+#include "how/how_scene.h"
 
 namespace game::scene
 {
 	enum class SCENE_ID {
 		test,
 		title,
+		how,
 		battle,
 		end
 	};
